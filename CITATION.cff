@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Lippe"
+  given-names: "Phillip"
+  orcid: "https://orcid.org/0000-0002-3639-6938"
+- family-names: "Magliacane"
+  given-names: "Sara"
+- family-names: "Löwe"
+  given-names: "Sindy"
+- family-names: "Asano"
+  given-names: "Yuki M"
+- family-names: "Cohen"
+  given-names: "Taco"
+- family-names: "Gavves"
+  given-names: "Efstratios"
+title: "BISCUIT: Causal Representation Learning from Binary Interactions"
+version: 1.0.0
+date-released: 2023-06-15
+url: "https://github.com/phlippe/BISCUIT/"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Lippe"
+    given-names: "Phillip"
+    orcid: "https://orcid.org/0000-0002-3639-6938"
+  - family-names: "Magliacane"
+    given-names: "Sara"
+  - family-names: "Löwe"
+    given-names: "Sindy"
+  - family-names: "Asano"
+    given-names: "Yuki M"
+  - family-names: "Cohen"
+    given-names: "Taco"
+  - family-names: "Gavves"
+    given-names: "Efstratios"
+  journal: "The 39th Conference on Uncertainty in Artificial Intelligence"
+  title: "BISCUIT: Causal Representation Learning from Binary Interactions"
+  url: "https://openreview.net/forum?id=VS7Dn31xuB"
+  year: 2023

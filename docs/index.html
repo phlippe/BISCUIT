@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="BISCUIT Project Page">
+  <meta property="og:title" content="BISCUIT: Causal Representation Learning from Binary Interactions"/>
+  <meta property="og:description" content="Project page of the UAI-2023 paper 'BISCUIT: Causal Representation Learning from Binary Interactions'"/>
+  <meta property="og:url" content="https://phlippe.github.io/BISCUIT/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="600"/>
+
+
+  <meta name="twitter:title" content="BISCUIT: Causal Representation Learning from Binary Interactions">
+  <meta name="twitter:description" content="Causal Representation Learning meets Embodied AI: Project page of the UAI-2023 paper 'BISCUIT: Causal Representation Learning from Binary Interactions'">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/banner_image.png">
+  <meta name="twitter:card" content="BISCUIT identifies causal variables of an embodied AI environment.">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Causality, Identifiability, Machine Learning, AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>BISCUIT: Causal Representation Learning from Binary Interactions</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body" style="background-color: #fff6e6;">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">&#127850; BISCUIT: Causal Representation Learning from Binary Interactions</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://phlippe.github.io/" target="_blank">Phillip Lippe</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://smaglia.wordpress.com/" target="_blank">Sara Magliacane</a><sup>2,3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://loewex.github.io/" target="_blank">Sindy L&ouml;we</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yukimasano.github.io/" target="_blank">Yuki M. Asano</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://tacocohen.wordpress.com/" target="_blank">Taco Cohen</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.egavves.com/" target="_blank">Efstratios Gavves</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>QUVA Lab, University of Amsterdam<br><sup>2</sup>AMLab, University of Amsterdam<br><sup>3</sup>MIT-IBM Watson AI Lab<br><sup>4</sup>Qualcomm AI Research<br><br>
+                Published in: Uncertainty in Artificial Intelligence (UAI), 2023</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://phlippe.github.io/media/BISCUIT_paper.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg style="color: white" role="img" height="100px" width="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.9414 4.9757a7.033 7.033 0 0 0-4.9308 2.0646 7.033 7.033 0 0 0-.1232 9.8068l2.395-2.395a3.6455 3.6455 0 0 1 5.1497-5.1478l2.397-2.3989a7.033 7.033 0 0 0-4.8877-1.9297zM7.07 4.9855a7.033 7.033 0 0 0-4.8878 1.9316l2.3911 2.3911a3.6434 3.6434 0 0 1 5.0227.1271l1.7341-2.9737-.0997-.0802A7.033 7.033 0 0 0 7.07 4.9855zm15.0093 2.1721l-2.3892 2.3911a3.6455 3.6455 0 0 1-5.1497 5.1497l-2.4067 2.4068a7.0362 7.0362 0 0 0 9.9456-9.9476zM1.932 7.1674a7.033 7.033 0 0 0-.002 9.6816l2.397-2.397a3.6434 3.6434 0 0 1-.004-4.8916zm7.664 7.4235c-1.38 1.3816-3.5863 1.411-5.0168.1134l-2.397 2.395c2.4693 2.3328 6.263 2.5753 9.0072.5455l.1368-.1115z" fill="white"></path></svg>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/phlippe/BISCUIT" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Dataset link -->
+                <span class="link-block">
+                  <a href="https://zenodo.org/record/8027138" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-zenodo"></i>
+                  </span>
+                  <span>Datasets</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser" style="background-color: #fff6e6;">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%" style="background-color: white; padding: 30px;">
+          <source src="static/videos/banner_video.mov"
+          type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <b>BISCUIT</b> learns causal variables from interactivate environments with low-level action information.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Identifying the causal variables of an environment and how to intervene on them is of core value in applications such as robotics and embodied AI. 
+              While an agent can commonly interact with the environment and may implicitly perturb the behavior of some of these causal variables, often the targets it affects remain unknown. 
+              In this paper, we show that causal variables can still be identified for many common setups, e.g., additive Gaussian noise models, if the agent's interactions with a causal variable can be described by an unknown binary variable. 
+              This happens when each causal variable has two different mechanisms, e.g., an observational and an interventional one. 
+              Using this identifiability result, we propose BISCUIT, a method for simultaneously learning causal variables and their corresponding binary interaction variables. 
+              On three robotic-inspired datasets, BISCUIT accurately identifies causal variables and can even be scaled to complex, realistic environments for embodied AI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Start first section -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">What is BISCUIT?</h2>
+          <div class="content has-text-justified">
+            <p>
+              BISCUIT is a method for learning <b>causal representations</b> from videos of <b>interactive systems</b>.
+              We refer to a representation as causal if it identifies the <b>causal variables</b> of the environment by disentangling them in a learned, latent space, and models the interactions between the causal variables.
+              Causal representations are useful for many applications, e.g., for robotics, where we need to reason about the effects of our actions on the environment, as well as interactions between causal variables.
+              Yet, learning a causal representation is challenging since simply optimizing for maximum likelihood leads to many equally good representations that do not disentangle the causal variables.
+            </p>
+            <p>
+              <b>Example:</b> A common example of an interactive system is an embodied agent interacting with objects in an environment.
+              In the kitchen environment of <a href="https://ai2thor.allenai.org/ithor">iTHOR</a>, the causal variables are the states of the objects in the kitchen, e.g., the microwave, the stove, the toaster, etc.
+              The agent can interact with these by, for example, turning on the microwave or opening the cabinet.
+              When attempting to solve a task like cooking an egg, the agent needs to causally reason about its interactions and effects on causal variables, e.g., the egg needs to be broken in a pan on a burning stove, which inherently requires a causal representation.
+              Similarly, in <a href="https://sites.google.com/view/causal-world/home">CausalWorld</a>, we have a tri-finger robot interacting with objects on the stage, e.g., the cube.
+            </p>
+            <div class="is-centered has-text-centered" style="padding-top: 10px;">
+              <div style="width: 50%; float: left;">
+                <div class="is-centered has-text-centered">
+                  <video width="60%" height="60%" autoplay muted loop>
+                    <source src="static/videos/ithor_seq.mov" type="video/mp4">
+                  </video>
+                  <p style="width: 80%; margin: auto;">
+                    <i><b><a href="https://ai2thor.allenai.org/ithor">iTHOR</a>:</b> An embodied agent interacting with objects in a kitchen environment.</i>
+                  </p>
+                </div>
+              </div>
+              <div style="width: 50%; float: right;">
+                <div class="is-centered has-text-centered">
+                  <video width="87%" height="60%" autoplay muted loop>
+                    <source src="static/videos/causal_world_seq.mov" type="video/mp4">
+                  </video>
+                  <p style="width: 80%; margin: auto;">
+                    <i><b><a href="https://sites.google.com/view/causal-world/home">CausalWorld</a>:</b> A tri-finger robot interacting with objects in a stage.</i>
+                  </p>
+                </div>
+              </div>
+              &nbsp;
+            </div>
+            <p>
+              To overcome this, BISCUIT uses a novel, practical identifiability result that we prove in the <b style="color: blue"><a href="https://phlippe.github.io/media/BISCUIT_paper.pdf">paper</a></b>.
+              It is based on the idea that the causal variables of an environment can be identified if the agent's interactions with a causal variable can be described by an unknown <b>binary interaction variable</b>. 
+              Many interactions can be described with a simple binary interaction, for example, when each causal variable has two different mechanisms, e.g., an observational and an interventional one.
+              Commonly, this binary interaction variable is not known beforehand and, instead, BISCUIT unsupervisedly learns them from low-level action information such as the agent's state or position of its robotic arm.
+            </p>
+            <p>
+              <b>Example:</b> In our kitchen environment, the agent can interact with objects like the microwave. 
+              If the agent decides to leave the microwave untouched for a time frame, the microwave follows its <i>observational</i> mechanism, e.g., maintains its current state or reducing the timer of being on.
+              Alternatively, the agent could actively interact with the microwave changing its state, e.g., turning it on or off, which corresponds to <i>intervening</i> on the microwave's state.
+              In this case, the agent's interaction with the microwave can be described by a binary variable, which is 1 if the agent is intervening on the microwave and 0 otherwise.
+              Similarly, an agent can interact with the plate by picking it up or leaving it untouched, which can also be described by a binary variable.
+              The value of the causal variable itself does not need to be binary, as the plate position is a 3D continuous variable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End first section -->
+
+  <!-- Start second section -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">How does BISCUIT work?</h2>
+          <div class="content has-text-justified">
+            <p>
+              BISCUIT uses an encoder-decoder setup to map the video frames to a latent space.
+              In this latent space, we aim to encode each causal variable in a separate set of dimensions.
+              This is implemented by modeling a temporal VAE, where the prior of the latent space is conditioned on the previous frame.
+              Further, an MLP per latent variable is used to unsupervisedly predict the binary interaction variable from the action information and the previous frame.
+              By regularizing the MLP output to be binary, BISCUIT learns to encode the causal variables in a disentangled manner.
+              &nbsp;
+            </p>
+            <div class="columns is-centered has-text-centered" style="display: block;">
+              <img src="static/images/teaser.png" alt="BISCUIT: Causal Representation Learning from Binary Interactions" style="width: 100%; max-width: 500px; padding-top: 10px;"/>
+              <p style="width: 100%; max-width: 600px; margin: auto;">
+                <i><b>BISCUIT</b> identifies causal variables from images by learning to encode low-level action information to binary interaction variables.</i>
+              </p>
+              &nbsp;
+            </div>
+            <p>
+              Alternatively, for visually complex datasets like iTHOR or CausalWorld, the VAE can be replaced with a two-stage training approach.
+              First, we train a standard autoencoder to reduce the frames to a much lower dimensional latent vector.
+              Then, we train a normalizing flow on top of the latent space of the autoencoder to map the potentially entangled representation to a <i>causal</i> representation, using the same prior setup as for the VAE.
+              With this, BISCUIT can accurately identify causal variables and their interactions even on datasets with high-resolution videos.
+              For more details, check out our <b style="color: blue"><a href="https://phlippe.github.io/media/BISCUIT_paper.pdf">paper</a></b>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End second section -->
+
+  <!-- Image carousel -->
+  <section class="section hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3" style="text-align: center;">Simulating Interventions in Latent Space</h2>
+            <div class="content has-text-justified">
+              <p>
+                Once the causal representation is learned, we can use it to simulate interventions and generate novel combinations of causal variables.
+                For example, given a frame, we could ask the question: "How would the same scene look like if we had opened the microwave?". 
+                To do this, we first encode the frame to the latent space and then manipulate the latent variables, in which BISCUIT represents the state of the microwave, to simulate the intervention.
+                This manipulation is done by encoding a frame to latent space where the microwave is open, and replacing the corresponding latent variables of the original frame with the ones of the open microwave frame.
+                Finally, we decode the latent representation to generate the new frame, as shown below.
+              </p>
+              <div class="columns is-centered has-text-centered" style="display: block;">
+                <img src="static/images/triplet_generation.png" alt="BISCUIT - Triplet Generation" style="width: 100%; max-width: 800px; padding-top: 10px;"/>
+                <p style="width: 100%; max-width: 900px; margin: auto;">
+                  <i><b>BISCUIT</b> can generate novel combinations of causal variables by combining the latents of two input images.</i>
+                </p>
+                &nbsp;
+              </div>
+              <p>
+                This process can be done for various combinations of causal variables, e.g., to simulate the effect of turning on the stove and activating the microwave.
+                In this way, BISCUIT can even generate novel combinations of causal variables that it has never seen during training, such as setting an egg to be uncooked although it is in the pan and the stove is burning.
+                We show a few example below, and you can generate your own combinations in our <b style="color: blue"><a href="https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb">demo</a></b> (coming soon)!
+                &nbsp;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 20px;">
+        <div id="results-carousel" class="carousel results-carousel" data-interval="10000">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/triplet_1.png" alt="Triplet Generation: Turning on the Microwave and the front-left Stove." style="width: 100%; max-width: 1000px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 1000px; margin: auto;">
+              Manipulating Image 1 by turning on the Microwave and the front-left Stove. Note the egg staying uncooked despite the stove being turned on, which the model has never seen in training and shows BISCUIT's ability to perform novel interventions.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/triplet_2.png" alt="Triplet Generation: Turning on the front-left Stove." style="width: 100%; max-width: 1000px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 1000px; margin: auto;">
+              Manipulating Image 1 by turning on the front-left Stove.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/triplet_3.png" alt="Triplet Generation: Turning on the Microwave and opening the Cabinet." style="width: 100%; max-width: 1000px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 1000px; margin: auto;">
+              Manipulating Image 1 by turning on the Microwave and opening the Cabinet.<br>&nbsp;
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/triplet_4.png" alt="Triplet Generation: Opening the Microwave." style="width: 100%; max-width: 1000px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 1000px; margin: auto;">
+              Manipulating Image 1 by opening the Microwave.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/triplet_5.png" alt="Triplet Generation: Turning on the Toaster." style="width: 100%; max-width: 1000px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 1000px; margin: auto;">
+              Manipulating Image 1 by turning on the Toaster.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+  <!-- Image carousel -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3" style="text-align: center;">Identifying the Ability to Intervene</h2>
+            <div class="content has-text-justified">
+              <p>
+                Besides the ability to simulate interventions, the learned interaction variables allow BISCUIT to also identify how the agent can intervene on a causal variable.
+                For example, given a frame, we could ask the question: "What actions can the agent perform to turn on the microwave?".
+                To do this, we first encode the frame to the latent space, and then feed all possible actions to the MLPs of the latent variables, which predict the binary interaction variable for each action.
+                All actions, for which the MLP predicts a 1 for the latent variable of the microwave, are the actions that the agent can perform to intervene on the microwave state.
+                In this way, BISCUIT can identify the affordances of the agent to intervene on individual causal variables of the environment.
+                In our iTHOR dataset, the actions consist of randomly sampled pixel positions of the objects the agent interacts with, i.e., simulating an agent's mouse click in iTHOR's <a href="https://ai2thor.allenai.org/demo/">demo</a>.
+                Hence, by predicting the binary interaction variable for each pixel position, BISCUIT unsupervisedly segments the objects in the environment and identifies the actions of the agent to interact with them.
+                We show some examples below, where each color represents the interaction map of a different object in the environment.
+                Check out our <b style="color: blue"><a href="https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb">demo</a></b> (coming soon) to generate interaction maps for new images!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/interaction_map_1.png" alt="Interaction map." style="width: 100%; max-width: 800px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 800px; margin: auto;">
+              Predicted interaction map of the iTHOR kitchen environment. BISCUIT identifies the interactions between the agent and the objects in the environment acurately.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/interaction_map_2.png" alt="Interaction map." style="width: 100%; max-width: 800px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 800px; margin: auto;">
+              BISCUIT adapts its interaction variables to the state of the environment. Here, since the Microwave is open, it cannot be turned on and its door is at a different position.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/interaction_map_3.png" alt="Interaction map." style="width: 100%; max-width: 800px; padding-bottom: 5px;"/>
+            <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 800px; margin: auto;">
+              The most challenging task is to disentangle the multiple moving objects, which occasionally can overlap in their predicted interactions.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/interaction_map_4.png" alt="Interaction map." style="width: 100%; max-width: 800px; padding-bottom: 5px;"/>
+            <p style="max-width: 800px; margin: auto;">
+              <h2 class="subtitle has-text-centered" style="width: 100%; max-width: 800px; margin: auto;">
+                For picked-up objects, BISCUIT correctly predicts their interaction target on the object itself.
+              </h2>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+  <!-- Youtube video -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End youtube video -->
+
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+            </iframe>
+          
+        </div>
+      </div>
+    </section> -->
+  <!--End paper poster -->
+
+  <section class="section" id="BibTeX" style="background-color: #fafafa;">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+        <h2 class="title">Want to learn more about BISCUIT?</h2>
+        <p>Check out our paper, code and demo!</p>
+        <div class="publication-links">
+          <!-- Arxiv PDF link -->
+          <span class="link-block">
+            <a href="https://phlippe.github.io/media/BISCUIT_paper.pdf" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Paper</span>
+            </a>
+          </span>
+
+          <!-- Supplementary PDF link -->
+          <!-- <span class="link-block">
+            <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Supplementary</span>
+            </a>
+          </span> -->
+
+          <!-- Github link -->
+          <span class="link-block">
+            <a href="https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <svg style="color: white" role="img" height="100px" width="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.9414 4.9757a7.033 7.033 0 0 0-4.9308 2.0646 7.033 7.033 0 0 0-.1232 9.8068l2.395-2.395a3.6455 3.6455 0 0 1 5.1497-5.1478l2.397-2.3989a7.033 7.033 0 0 0-4.8877-1.9297zM7.07 4.9855a7.033 7.033 0 0 0-4.8878 1.9316l2.3911 2.3911a3.6434 3.6434 0 0 1 5.0227.1271l1.7341-2.9737-.0997-.0802A7.033 7.033 0 0 0 7.07 4.9855zm15.0093 2.1721l-2.3892 2.3911a3.6455 3.6455 0 0 1-5.1497 5.1497l-2.4067 2.4068a7.0362 7.0362 0 0 0 9.9456-9.9476zM1.932 7.1674a7.033 7.033 0 0 0-.002 9.6816l2.397-2.397a3.6434 3.6434 0 0 1-.004-4.8916zm7.664 7.4235c-1.38 1.3816-3.5863 1.411-5.0168.1134l-2.397 2.395c2.4693 2.3328 6.263 2.5753 9.0072.5455l.1368-.1115z" fill="white"></path></svg>
+            </span>
+            <span>Demo</span>
+            </a>
+          </span>
+
+          <!-- Github link -->
+          <span class="link-block">
+            <a href="https://github.com/phlippe/BISCUIT" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+            </a>
+          </span>
+
+          <!-- Dataset link -->
+          <span class="link-block">
+            <a href="https://zenodo.org/record/8027138" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-zenodo"></i>
+            </span>
+            <span>Datasets</span>
+            </a>
+          </span>
+
+          <!-- ArXiv abstract Link -->
+          <!-- <span class="link-block">
+            <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+            </a>
+          </span> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX" style="background-color: #fafafa;">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre style="background-color: #f5f5f5;"><code>
+@inproceedings{lippe2023biscuit,
+    title        = {BISCUIT: Causal Representation Learning from Binary Interactions},
+    author       = {Lippe, Phillip and Magliacane, Sara and L{\"o}we, Sindy and Asano, Yuki M and Cohen, Taco and Gavves, Efstratios},
+    year         = 2023,
+    booktitle    = {The 39th Conference on Uncertainty in Artificial Intelligence},
+    url          = {https://openreview.net/forum?id=VS7Dn31xuB}
+}
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+    <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<!-- Default Statcounter code for BISCUIT https://phlippe.github.io/BISCUIT/ -->
+<script type="text/javascript">
+var sc_project=12891099; 
+var sc_invisible=1; 
+var sc_security="aad1b357"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12891099/0/aad1b357/1/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
