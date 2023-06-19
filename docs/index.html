@@ -84,7 +84,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://phlippe.github.io/media/BISCUIT_paper.pdf" target="_blank"
+                  <a href="https://arxiv.org/abs/2306.09643" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -238,7 +238,7 @@
               &nbsp;
             </div>
             <p>
-              To overcome this, BISCUIT uses a novel, practical identifiability result that we prove in the <b style="color: blue"><a href="https://phlippe.github.io/media/BISCUIT_paper.pdf">paper</a></b>.
+              To overcome this, BISCUIT uses a novel, practical identifiability result that we prove in the <b style="color: blue"><a href="https://arxiv.org/abs/2306.09643">paper</a></b>.
               It is based on the idea that the causal variables of an environment can be identified if the agent's interactions with a causal variable can be described by an unknown <b>binary interaction variable</b>. 
               Many interactions can be described with a simple binary interaction, for example, when each causal variable has two different mechanisms, e.g., an observational and an interventional one.
               Commonly, this binary interaction variable is not known beforehand and, instead, BISCUIT unsupervisedly learns them from low-level action information such as the agent's state or position of its robotic arm.
@@ -285,7 +285,7 @@
               First, we train a standard autoencoder to reduce the frames to a much lower dimensional latent vector.
               Then, we train a normalizing flow on top of the latent space of the autoencoder to map the potentially entangled representation to a <i>causal</i> representation, using the same prior setup as for the VAE.
               With this, BISCUIT can accurately identify causal variables and their interactions even on datasets with high-resolution videos.
-              For more details, check out our <b style="color: blue"><a href="https://phlippe.github.io/media/BISCUIT_paper.pdf">paper</a></b>!
+              For more details, check out our <b style="color: blue"><a href="https://arxiv.org/abs/2306.09643">paper</a></b>!
             </p>
           </div>
         </div>
@@ -383,7 +383,7 @@
                 To do this, we first encode the frame to the latent space, and then feed all possible actions to the MLPs of the latent variables, which predict the binary interaction variable for each action.
                 All actions, for which the MLP predicts a 1 for the latent variable of the microwave, are the actions that the agent can perform to intervene on the microwave state.
                 In this way, BISCUIT can identify the affordances of the agent to intervene on individual causal variables of the environment.
-                In our iTHOR dataset, the actions consist of randomly sampled pixel positions of the objects the agent interacts with, i.e., simulating an agent's mouse click in iTHOR's <a href="https://ai2thor.allenai.org/demo/">demo</a>.
+                In our iTHOR dataset, the actions consist of randomly sampled pixel positions of the objects the agent interacts with, i.e., simulating an agent's mouse click in <a href="https://ai2thor.allenai.org/demo/">iTHOR's demo</a>.
                 Hence, by predicting the binary interaction variable for each pixel position, BISCUIT unsupervisedly segments the objects in the environment and identifies the actions of the agent to interact with them.
                 We show some examples below, where each color represents the interaction map of a different object in the environment.
                 Check out our <b style="color: blue"><a href="https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb">demo</a></b> (coming soon) to generate interaction maps for new images!
@@ -475,7 +475,7 @@
         <div class="publication-links">
           <!-- Arxiv PDF link -->
           <span class="link-block">
-            <a href="https://phlippe.github.io/media/BISCUIT_paper.pdf" target="_blank"
+            <a href="https://arxiv.org/abs/2306.09643" target="_blank"
             class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
               <i class="fas fa-file-pdf"></i>

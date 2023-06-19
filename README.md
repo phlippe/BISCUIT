@@ -2,7 +2,7 @@
 
 [![ProjectPage](https://img.shields.io/static/v1.svg?logo=html&label=Website&message=Project%20Page&color=red)](https://phlippe.github.io/BISCUIT/)
 [![Demo](https://colab.research.google.com/assets/colab-badge.svg?label=Demo)](https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb)
-[![Paper](https://img.shields.io/static/v1.svg?logo=arxiv&label=Paper&message=Open%20Paper&color=green)](https://phlippe.github.io/media/BISCUIT_paper.pdf)
+[![Paper](https://img.shields.io/static/v1.svg?logo=arxiv&label=Paper&message=Open%20Paper&color=green)](https://arxiv.org/abs/2306.09643)
 [![Datasets](https://img.shields.io/static/v1.svg?logo=zenodo&label=Zenodo&message=Download%20Datasets&color=blue)](https://zenodo.org/record/8027138)   
 
 This is the official code repository for the papers **"BISCUIT: Causal Representation Learning from Binary Interactions"** (UAI 2023), by Phillip Lippe, Sara Magliacane, Sindy Löwe, Yuki M. Asano, Taco Cohen, and Efstratios Gavves. For a paper summary, check out our [project page](https://phlippe.github.io/BISCUIT/)!
