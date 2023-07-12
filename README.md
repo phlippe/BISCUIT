@@ -10,7 +10,7 @@ This is the official code repository for the papers **"BISCUIT: Causal Represent
 ## Requirements
 
 The code was originally written for PyTorch v1.13 and Python 3.8. Higher versions of PyTorch and Python are expected to work as well (tested on v2.0.1).
-Further, the code base makes use of PyTorch Lightning (tested for v1.9 for PyTorch v1.13 and v2.0.3 for PyTOrch v2.0.1) to structure the training code.
+Further, the code base makes use of PyTorch Lightning (tested for v1.9 for PyTorch v1.13 and v2.0.3 for PyTorch v2.0.1) to structure the training code.
 The steps for installing the requirements are:
 
 1. Create a new conda environment from the provided YAML file:
