@@ -28,6 +28,9 @@ The steps for installing the requirements are:
 
 We provide a demo notebook that showcases a pretrained BISCUIT-NF model on the iTHOR dataset. The notebook can be run on Google Colab and can be found [here](https://colab.research.google.com/github/phlippe/BISCUIT/blob/main/demo.ipynb).
 
+![Triplet Generation](https://github.com/phlippe/BISCUIT/assets/25037725/882e5258-74b4-4790-aa75-341e7059230e)
+
+
 ## Datasets
 
 We provide the data generation scripts for reproducing our papers in the folder `data_generation/`. See below for the specific commands to reproduce the specific datasets used in the paper. Alternatively, the datasets can be downloaded from our zenodo upload (see badge above).
@@ -42,7 +45,7 @@ For training, set `num_sequences` to 1500 and `prefix` to `"train"`, and for eva
 
 In case you face difficulties with installing or running the simulation via the `ai2thor` package, please refer to the [official documentation](https://ai2thor.allenai.org/ithor/documentation/). 
 
-https://github.com/phlippe/BISCUIT/assets/25037725/38314f61-8263-40f5-ae2d-cb53c1c0f9df
+https://github.com/phlippe/BISCUIT/assets/25037725/c0826868-2a93-4c92-a504-03627efe884c
 
 ### CausalWorld
 
@@ -59,7 +62,7 @@ Adjust the parameter `num_processes` to the number of cores available on your ma
 
 The CausalWorld dataset generation may require a slightly adjusted version of the `causal_world` package. If interested in obtaining this code, please reach out (see contact information at the bottom). 
 
-https://github.com/phlippe/BISCUIT/assets/25037725/11562cb0-dc71-4260-aae4-d3e1b5bcca09
+https://github.com/phlippe/BISCUIT/assets/25037725/3a585c18-cb48-4f17-bee1-1f5dd6dd1f34
 
 ### Voronoi
 
@@ -78,8 +81,7 @@ Adjust the parameter `num_processes` to the number of cores available on your ma
 For 9 variables, change the parameter `num_causal_vars` to 9. 
 To generate a dataset with minimal number of interactions, add `--use_minimal_action_interventions`.
 
-![Voronoi-Examples](https://github.com/phlippe/BISCUIT/assets/25037725/80a1cc64-42f7-4cf7-9447-b5fb4b4359f2)
-
+![Voronoi_Example](https://github.com/phlippe/BISCUIT/assets/25037725/570a47bd-a564-419a-a4f1-56c576738c27)
 
 ## Running experiments
 
