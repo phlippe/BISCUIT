@@ -185,10 +185,13 @@ class InteractionTransitionPrior(nn.Module):
                          Not strictly used anymore, but can be useful for debugging.
         """
         if self.add_prev_state:
+            if action.ndim == 3:
+                z_t = z_t[:,None,:].expand(-1, action.shape[1], -1)
             action = torch.cat([action, z_t], dim=-1)
             if self.training:
                 self.last_batch_prev_state = z_t.detach()
-        action = action[...,None,:].expand(-1, self.num_latents, -1)
+        if action.ndim == 2:
+            action = action[...,None,:].expand(-1, self.num_latents, -1)
         action = self.action_preprocess(action, detach_weights=detach_weights)
         abs_logits = torch.abs(action)
         action_logits = action
@@ -284,6 +287,26 @@ class InteractionTransitionPrior(nn.Module):
         loss = self._calculate_loss(nll, **extra_info, **extra_params)
 
         return loss
+    
+    def sample(self, z_t, action, num_samples=1, **kwargs):
+        """
+        Sample from the prior distribution p(z^t1|z^t,I^t+1) in BISCUIT.
+
+        Parameters
+        ----------
+        z_t : torch.FloatTensor, shape [batch_size, num_latents]
+              Latents at time step t, i.e. the input to the prior
+        action : torch.FloatTensor, shape [batch_size, action_size]
+                 Action/Regime variable at time step t+1 (i.e. causing change from t -> t+1)
+        num_samples : int, default 1
+                      Number of samples to draw from the prior
+        """
+        extra_params = self._prepare_prior_input()
+        prior_params, extra_info = self._get_prior_params(z_t, action=action, **extra_params)
+        prior_mean, prior_logstd = prior_params
+        z_t1 = torch.randn(z_t.shape[0], num_samples, self.num_latents, device=z_t.device)
+        z_t1 = z_t1 * torch.exp(prior_logstd) + prior_mean
+        return z_t1, (prior_mean, prior_logstd)
 
     def _calculate_loss(self, nll, action_logits, **kwargs):
         """
